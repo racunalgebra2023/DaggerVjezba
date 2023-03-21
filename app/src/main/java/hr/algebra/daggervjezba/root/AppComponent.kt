@@ -27,7 +27,7 @@ interface ApplicationComponent : AndroidInjector<Application> {
 class ApplicationModule {
     @Provides
     @Singleton
-    fun providesCommonStuff() = "Benjamin"
+    fun providesCommonStuff() = "Neki text"
 }
 @Module
 class MainActivityModule {

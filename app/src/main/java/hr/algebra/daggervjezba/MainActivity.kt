@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var x : MojaKlasa
 
+    @Inject
+    lateinit var y : String
+
     override fun onCreate( savedInstanceState: Bundle? ) {
         super.onCreate( savedInstanceState )
         AndroidInjection.inject(this );
@@ -23,6 +26,6 @@ class MainActivity : AppCompatActivity() {
         setContentView( binding.root )
 
         Log.i( TAG, x.toString() )
-        x.pokaziTost( "Primjer" )
+        x.pokaziTost( y )
     }
 }
